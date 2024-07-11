@@ -1,0 +1,700 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #F8F9FA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50;
+    padding: 5px 10px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #6C63FF;
+}
+
+.auth a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+.auth .signup {
+    padding: 8px 16px;
+    background-color: #6C63FF;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.main {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px; /* Increased max-width for wider layout */
+    margin: 0 auto;
+    padding: 80px 40px; /* Increased padding for more space */
+}
+
+.hero-text {
+    max-width: 50%; /* Adjusted to take up half of the hero section */
+    padding-right: 40px; /* Added padding for spacing */
+}
+
+.hero-text .badges span {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #6C63FF;
+}
+
+.hero h1 {
+    font-size: 42px; /* Increased font size for impact */
+    margin: 30px 0; /* Adjusted margin for spacing */
+}
+
+.hero .highlight {
+    color: #6C63FF;
+}
+
+.hero p {
+    font-size: 20px; /* Increased font size for readability */
+    color: #777;
+}
+
+.cta {
+    display: inline-block;
+    margin: 20px 10px; /* Adjusted margin for button spacing */
+    padding: 18px 32px; /* Increased padding for larger buttons */
+    background-color: #6C63FF;
+    color: #fff;
+    border-radius: 6px; /* Slightly rounded corners */
+    text-decoration: none;
+}
+
+.cta.secondary {
+    background-color: #fff;
+    color: #6C63FF;
+    border: 2px solid #6C63FF;
+}
+
+.hero-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Align images to the right */
+    width: 50%; /* Adjusted to take up half of the hero section */
+}
+
+.circle {
+    width: 120px; /* Increased circle size for impact */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px; /* Adjusted spacing between circles */
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Adjusted border radius */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text, .hero-images {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero-text {
+        padding-right: 0; /* Remove padding on smaller screens */
+    }
+
+    .cta {
+        margin: 15px 10px; /* Adjusted button margin */
+        padding: 15px 28px; /* Adjusted button padding */
+    }
+}
+
+.cards-section {
+    display: flex;
+   .cards-section {
+    display: flex;
+    justify-content: space-between; /* Distribute cards evenly */
+    padding: 40px 20px;
+}
+
+.card {
+    margin-left: 50px;
+    background-color: #fff;
+    border: 2px solid transparent; /* Initial border settings */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    padding: 20px;
+    width: calc(50% - 200px); /* Two cards take almost full width with spacing */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    text-align: left; /* Text alignment left */
+}
+
+.card:hover {
+    border-color: #6C63FF; /* Border color change on hover */
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+
+.card-image img {
+    margin-right: 600px;
+    border-radius: 50%; /* Circle shape for the image */
+    width: 120px; /* Increased image size */
+    height: 120px; /* Increased image size */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth image scale on hover */
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
+.card-content h3 {
+    color:black;
+    font-size: 18px; /* Increased font size for headings */
+    margin-bottom: 8px; /* Adjusted margin for spacing */
+}
+
+.card-content h2 {
+    color:#6C63FF;
+    font-size: 24px; /* Increased font size for headings */
+    margin-bottom: 8px; /* Adjusted margin for spacing */
+}
+
+.card-content p {
+    color: #777;
+    font-size: 16px; /* Increased font size for paragraphs */
+    line-height: 1.6; /* Improved readability with slightly increased line height */
+}
+
+}
+
+.card {
+   
+    background-color: #fff;
+    border: 2px solid transparent; /* Initial border settings */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    padding: 20px;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    text-align: left; /* Text alignment left */
+}
+
+.card:hover {
+    border-color: #6C63FF; /* Border color change on hover */
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.card-image {
+    text-align: center; /* Center align the image */
+}
+
+.card-image img {
+    border-radius: 50%; /* Circle shape for the image */
+    width: 120px; /* Increased image size */
+    height: 120px; /* Increased image size */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth image scale on hover */
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
+.card-content h3 {
+    color: #6C63FF;
+    font-size: 18px; /* Increased font size for headings */
+    margin-bottom: 8px; /* Adjusted margin for spacing */
+}
+
+.card-content h2 {
+    color: #2C3E50;
+    font-size: 24px; /* Increased font size for headings */
+    margin-bottom: 8px; /* Adjusted margin for spacing */
+}
+
+.card-content p {
+    color: #777;
+    font-size: 16px; /* Increased font size for paragraphs */
+    line-height: 1.6; /* Improved readability with slightly increased line height */
+}
+
+
+.trusted-by {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.trusted-by h3 {
+    color: #2C3E50;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    margin: 10px 20px;
+    max-height: 40px;
+}
+.industry-leader {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.industry-leader h2 {
+    color: #2C3E50;
+    font-size: 18px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.leader-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.leader-section h2 {
+    color: #2C3E50;
+    font-size: 18px;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: auto auto; /* Automatic height for rows */
+    gap: 20px; /* Gap between items */
+}
+
+.info-card, .image-card, .purple-background, .card-image1, .blue-background, .card-details {
+    height: 150px; /* Set the height of each section */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+    background-color: #E6F7FF; /* Blue background */
+}
+
+.purple-background {
+    background-color: #F3E5FF; /* Purple background */
+}
+
+.card-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2C3E50; /* Title color */
+}
+
+.card-details p {
+    font-size: 14px;
+    color: #777;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%; /* Ensure images fill their container */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded corners for top of image container */
+}
+
+.card-image1 img {
+    width: 100%;
+    height: 100%; /* Ensure image fills its container */
+    object-fit: cover;
+    border-radius: 0 0 10px 10px; /* Rounded corners for bottom of image container */
+}
+
+/* Main Section Styles */
+
+
+.container-fluid {
+    
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    display: flex;
+    
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.card ul li svg {
+    margin-right: 10px;
+}
+
+.card a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card a.button:hover {
+    background-color:  #6C63FF;
+    color: #fff;
+}
+
+.card p.button-secondary-text {
+    font-size: 14px;
+    color: #b08ce9;
+    margin-top: 10px;
+}
+
+/* Theme Colors */
+.blue-theme {
+    background-color: #7eb5f0;
+}
+
+.purple-theme {
+    background-color: #b08ce9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+.skills {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.skill-card {
+    margin-left: 50px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.skill-card:hover {
+    border-color: #6C63FF;
+    border-radius: 15px; /* Border color change on hover */
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+.skill-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+.skill-card li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+.skill-card li svg {
+    margin-right: 10px;
+}
+.skill-card.programming {
+    border-top: 4px solid #89c2ff;
+}
+.skill-card.design {
+    border-top: 4px solid #ff8c8c;
+}
+.skill-card.marketing {
+    border-top: 4px solid #b6ffb3;
+}
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.view-all a {
+    text-decoration: none;
+    color: #555;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.view-all a:hover {
+    background-color: #ddd;
+}
+.container_1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.help-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+  
+}
+
+.card h2 {
+    font-weight: normal;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: block;
+    color: #6b4eff;
+    font-size: 1em;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* New CSS for circular images */
+.card .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px; 
+    border-radius: 50%;
+   
+    overflow: hidden;
+}
+
+.card .icon img {
+    width: 100%;
+    height: auto;
+  
+}
+.footer {
+    background-color:white;
+    padding: 40px 20px;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-left: 100px;
+    padding-top: 20px;
+    border-top: 1px solid #e6e6e6;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+
+.logos span {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px bl;
+}
+.details{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.details:hover {
+    background-color:  #6C63FF;
+    color: #fff;
+}
